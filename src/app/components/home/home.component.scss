@@ -1,0 +1,60 @@
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                url('https://images.unsplash.com/photo-1564006532-4f6a87b4f36b') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 6rem 2rem;
+  
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+  
+      h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+  
+      .tagline {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+      }
+  
+      .actions {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+  
+        button {
+          padding: 0.8rem 1.5rem;
+          border: none;
+          font-size: 1rem;
+          font-weight: 600;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background 0.3s ease;
+  
+          &.donate {
+            background-color: #ff7043;
+            color: white;
+  
+            &:hover {
+              background-color: #f4511e;
+            }
+          }
+  
+          &.volunteer {
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+  
+            &:hover {
+              background-color: white;
+              color: #004d40;
+            }
+          }
+        }
+      }
+    }
+  }
+  
