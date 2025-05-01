@@ -1,9 +1,20 @@
 <header class="main-header">
-  <div class="logo">🌱 Krushi Gaurav</div>
-  <nav class="nav-links">
-    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+  <div class="logo">
+    <a routerLink="/">
+      <img src="assets/images/logo.jpg" alt="Aikya Seva Centre Logo" class="logo-img" />
+    </a>
+  </div>
+
+  <div class="hamburger" (click)="toggleMenu()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+
+  <nav class="nav-links" [class.open]="menuOpen">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="toggleMenu()">Home</a>
     <a routerLink="/projects" routerLinkActive="active">Projects</a>
-    <a routerLink="/donate" routerLinkActive="active">Donate</a>
+    <a routerLink="/donate" routerLinkActive="active" (click)="toggleMenu()">Donate</a>
     <a routerLink="/volunteer" routerLinkActive="active">Volunteer</a>
     <a routerLink="/blog" routerLinkActive="active">Blog</a>
     <a routerLink="/contact" routerLinkActive="active">Contact</a>

@@ -1,0 +1,41 @@
+.contact-section {
+    padding: 3rem 2rem;
+    max-width: 800px;
+    margin: auto;
+  
+    h2 {
+      text-align: center;
+      color: #008080;
+      margin-bottom: 2rem;
+    }
+  
+    .contact-content {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+  
+      .contact-details {
+        font-size: 1rem;
+  
+        p {
+          margin: 0.5rem 0;
+        }
+  
+        a {
+          color: #008080;
+          text-decoration: none;
+  
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+  
+      .contact-map {
+        width: 100%;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+    }
+  }
+  
