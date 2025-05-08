@@ -20,13 +20,31 @@
     },
     {
         "slug": "education",
-        "title": "Building Climate Resilience in Rural Communities",
+        "title": "Empowering Rural Education",
         "date": "2025-03-10",
-        "category": "Climate Change",
-        "author": "Jane Doe",
-        "preview": "Exploring strategies to enhance climate resilience among rural populations...",
-        "thumbnail": "assets/images/blogs/climate-resilience-thumbnail.jpg"
+        "category": "Education in Rural areas of Maharashtra",
+        "author": "Aiikya Seva Center",
+        "preview": "Rural education must be enhanced by providing modern facilities and equal opportunities, ensuring that children in these areas have access to quality learning resources...",
+        "thumbnail": "assets/images/blogs/educationBlogCover.jpg"
         
+      },
+      {
+        "slug": "watershed",
+        "title": "Watershed Development Projects",
+        "date": "2025-03-12",
+        "category": "Water Resource & Soil Conservation",
+        "author": "Aikya Seva Centre",
+        "preview": "Watershed activities like lake excavation, nala deepening, and bunding have significantly improved water conservation, agriculture, and rural sustainability in Maharashtra...",
+        "thumbnail": "assets/images/blogs/watershedBlogCover.jpg"
+      },
+      {
+        "slug": "healthcare",
+        "title": "Health, Hygiene & Clean Energy",
+        "date": "2025-03-18",
+        "category": "Rural Healthcare & Sanitation",
+        "author": "Aikya Seva Centre",
+        "preview": "Bringing healthcare access, safe drinking water, and clean energy to rural households — improving lives from the roots.",
+        "thumbnail": "assets/images/blogs/mobileClinic.jpg"
       }
   ]
   

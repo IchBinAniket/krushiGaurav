@@ -20,7 +20,7 @@ export class BlogdetailComponent {
     const slug = this.route.snapshot.paramMap.get('slug');
     this.http.get(`assets/blogs/${slug}.json`).subscribe(data => {
       this.blog = data;
-      // this.safeHtmlContent = this.sanitizer.bypassSecurityTrustHtml(this.blog.htmlContent);
+      this.safeHtmlContent = this.sanitizer.bypassSecurityTrustHtml(this.blog.htmlContent);
     });
   }
 }

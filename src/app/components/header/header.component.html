@@ -13,10 +13,10 @@
 
   <nav class="nav-links" [class.open]="menuOpen">
     <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="toggleMenu()">Home</a>
-    <a routerLink="/projects" routerLinkActive="active">Projects</a>
+    <a routerLink="/projects" routerLinkActive="active" (click)="toggleMenu()">Projects</a>
     <a routerLink="/donate" routerLinkActive="active" (click)="toggleMenu()">Donate</a>
-    <a routerLink="/volunteer" routerLinkActive="active">Volunteer</a>
-    <a routerLink="/blog" routerLinkActive="active">Blog</a>
-    <a routerLink="/contact" routerLinkActive="active">Contact</a>
+    <a routerLink="/volunteer" routerLinkActive="active" (click)="toggleMenu()">Volunteer</a>
+    <a routerLink="/blog" routerLinkActive="active" (click)="toggleMenu()">Blog</a>
+    <a routerLink="/contact" routerLinkActive="active" (click)="toggleMenu()">Contact</a>
   </nav>
 </header>
