@@ -1,1 +1,14 @@
-<p>blog works!</p>
+<div class="blog-container">
+    <div class="blog-card" *ngFor="let blog of blogs" (click)="goToBlog(blog.slug)">
+      <img [src]="blog.thumbnail" alt="{{ blog.title }}" />
+      <div class="blog-meta">
+        <span class="category">{{ blog.category }}</span>
+        <span class="date">{{ blog.date }}</span>
+      </div>
+      <h3>{{ blog.title }}</h3>
+      <p class="preview">{{ blog.preview }}</p>
+      <p class="author">By {{ blog.author }}</p>
+      <a target="_blank">Read More →</a>
+    </div>
+</div>
+  

@@ -1,0 +1,38 @@
+.banner {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+  }
+  
+  .html-wrapper {
+    max-width: 800px;
+    margin: auto;
+  
+    img {
+      display: block;
+      margin: 2rem auto;
+      max-width: 100%;
+      border-radius: 8px;
+    }
+  
+    h2, h3 {
+      margin-top: 2rem;
+      font-size: 1.4rem;
+      color: #008080;
+    }
+  
+    p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+  
+    .caption {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: -1rem;
+    }
+  }
+  

@@ -1,1 +1,15 @@
-<p>projects works!</p>
+<section class="projects-wrapper">
+    <h2>Our Work</h2>
+  
+    <div class="project-cards">
+        <div class="project-card" *ngFor="let project of projects">
+          <img [src]="project.images[project.currentImageIndex]" [alt]="project.title" />
+          <div class="card-text">
+            <h3>{{ project.title }}</h3>
+            <p>{{ project.shortDescription }}</p>
+            <button (click)="goTo(project.slug)" class="btn link">Read More →</button>
+          </div>
+        </div>
+      </div>
+  </section>
+  

@@ -38,19 +38,18 @@
       Aikya Seva Centre is a grassroots NGO transforming lives in rural Maharashtra since 2008. We focus on education,
       watershed development, healthcare, women and farmer empowerment, and sustainable practices to build self-reliant, eco-conscious villages.
     </p>
-    <!-- <a routerLink="/donate" class="btn link">Learn More →</a> -->
-    <a (click)="goTo('donate')" class="btn link">Learn More →</a>
+    <a (click)="goTo('projects')" class="btn link">Learn More →</a>
   </div>
-  <div class="about-img">
+  <!-- <div class="about-img">
     <img src="assets/images/founder.jpg" alt="Founder with community" />
-  </div>
+  </div> -->
 </section>
 
 <!-- CTA Strip -->
 <section class="cta-strip">
   <h3>Want to help build a stronger, sustainable rural India?</h3>
   <div class="cta-buttons">
-    <a routerLink="/volunteer" class="btn primary">Become a Volunteer</a>
-    <a routerLink="/donate" class="btn secondary">Make a Donation</a>
+    <a (click)="goTo('volunteer')" class="btn primary">Become a Volunteer</a>
+    <a (click)="goTo('donate')" class="btn secondary">Make a Donation</a>
   </div>
 </section>

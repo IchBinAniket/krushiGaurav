@@ -1,0 +1,6 @@
+<div *ngIf="blog">
+    <img [src]="blog.banner" alt="{{ blog.title }}" class="blog-banner" />
+    <h1>{{ blog.title }}</h1>
+    <div class="blog-content" [innerHTML]="blog.htmlContent"></div>
+</div>
+  hello its blog detail
