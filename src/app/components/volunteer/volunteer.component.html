@@ -1,1 +1,30 @@
-<p>volunteer works!</p>
+<div class="overlay">
+    <div class="dialog-box">
+      <button class="close-btn" (click)="onClose()">×</button>
+      <h2>Volunteer with Us</h2>
+  
+      <form [formGroup]="volunteerForm" (ngSubmit)="onSubmit()">
+        <label>
+          Full Name
+          <input formControlName="fullName" type="text" required />
+        </label>
+        <label>
+          Email
+          <input formControlName="email" type="email" required />
+        </label>
+        <label>
+          Phone
+          <input formControlName="phone" type="tel" required />
+        </label>
+        <label>
+          Message (Optional)
+          <textarea formControlName="message" rows="3"></textarea>
+        </label>
+  
+        <button type="submit" [disabled]="isSubmitting">Submit</button>
+      </form>
+  
+      <p *ngIf="successMessage" class="success">{{ successMessage }}</p>
+    </div>
+  </div>
+  

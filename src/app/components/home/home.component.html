@@ -49,7 +49,10 @@
 <section class="cta-strip">
   <h3>Want to help build a stronger, sustainable rural India?</h3>
   <div class="cta-buttons">
-    <a (click)="goTo('volunteer')" class="btn primary">Become a Volunteer</a>
+    <a href="#" (click)="openVolunteer($event)" class="btn secondary">Become a Volunteer</a>
     <a (click)="goTo('donate')" class="btn secondary">Make a Donation</a>
   </div>
 </section>
+
+<app-volunteer *ngIf="showVolunteer" (close)="showVolunteer = false"></app-volunteer>
+
