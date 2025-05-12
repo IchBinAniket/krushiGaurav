@@ -38,6 +38,15 @@
         "thumbnail": "assets/images/blogs/watershedBlogCover.jpg"
       },
       {
+        "slug": "womenempowerment",
+        "title": "Empowering Womens Through Engagement and Education",
+        "date": "2025-05-09",
+        "category": "Women's Empowerment",
+        "author": "Aikya Seva Centre",
+        "preview": "Aikya’s women's programs build confidence, skills, and income sources through exposure trips, training, self-help groups, and support for small businesses.",
+        "thumbnail": "assets/images/blogs/womenEmpowerment/cover.png"
+      },
+      {
         "slug": "healthcare",
         "title": "Health, Hygiene & Clean Energy",
         "date": "2025-03-18",

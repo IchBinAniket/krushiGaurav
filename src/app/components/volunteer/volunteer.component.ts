@@ -3,6 +3,9 @@ import { Component, EventEmitter, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms'; // Import ReactiveFormsModule
+import emailjs from '@emailjs/browser';
+import { MatSnackBar } from '@angular/material/snack-bar';
+
 
 @Component({
   selector: 'app-volunteer',
@@ -17,7 +20,7 @@ export class VolunteerComponent {
   isSubmitting = false;
   successMessage = '';
 
-  constructor(private fb: FormBuilder, private http: HttpClient) {
+  constructor(private fb: FormBuilder, private http: HttpClient, private snackBar: MatSnackBar) {
     this.volunteerForm = this.fb.group({
       fullName: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
@@ -46,6 +49,29 @@ export class VolunteerComponent {
           this.isSubmitting = false;
         }
       });
+
+      emailjs.send('service_hht3qsn', 'template_abhh4yv', {
+        to_name: formData.fullName,
+        to_email: formData.email
+      }, 'O8pvayU7YP7M6mqYR')
+      .then(() => {
+        this.volunteerForm.reset();
+        this.isSubmitting = false;
+        this.snackBar.open('Thank you for volunteering! Our team will contact you soon.', 'Close', {
+          duration: 5000,
+          horizontalPosition: 'center',
+          verticalPosition: 'bottom',
+          panelClass: ['custom-snackbar']  
+        });
+      })
+      .catch((err) => {
+        console.error('EmailJS Error:', err);
+        this.isSubmitting = false;
+      });
+
+      
+      
+      this.onClose();
     }
     else{
       console.log('invalid form')
