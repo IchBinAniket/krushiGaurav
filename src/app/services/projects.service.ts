@@ -47,7 +47,6 @@ export class ProjectsService {
         shortDescription: 'SHGs, tailoring training, business loans, workshops, and micro-enterprises.',
         images: [
           'assets/images/womenEmpowerment/cover2.png',
-          'assets/images/womenEmpowerment/ChickenDistribution1.png',
           'assets/images/womenEmpowerment/cover1.png'
         ],
         currentImageIndex: 0

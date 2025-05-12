@@ -21,7 +21,7 @@ export class ProjectsComponent {
       this.projects.forEach((project) => {
         project.currentImageIndex = (project.currentImageIndex + 1) % project.images.length;
       });
-    }, 1000); // rotate every 30 seconds
+    }, 3000); // rotate every 30 seconds
   }
 
   goTo(route: string) {

@@ -1,45 +1,11 @@
-// .main-header {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     padding: 1rem 2rem;
-//     background-color: #004d40;
-//     color: white;
-//     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  
-//     .logo {
-//       font-size: 1.5rem;
-//       font-weight: bold;
-//     }
-  
-//     .nav-links {
-//       display: flex;
-//       gap: 1.5rem;
-  
-//       a {
-//         color: white;
-//         text-decoration: none;
-//         font-weight: 500;
-//         position: relative;
-  
-//         &.active::after {
-//           content: '';
-//           position: absolute;
-//           bottom: -4px;
-//           left: 0;
-//           width: 100%;
-//           height: 2px;
-//           background: #ffcc80;
-//         }
-  
-//         &:hover {
-//           color: #ffcc80;
-//         }
-//       }
-//     }
-//   }
-  
-
+@keyframes rotate-logo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 .main-header {
   display: flex;
@@ -52,8 +18,32 @@
   z-index: 100;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 
-  .logo-img {
-    height: 60px;
+  .logo {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: inherit;
+
+      .logo-img {
+        height: 60px;
+        display: block;
+        animation: rotate-logo 5s linear infinite;
+      }
+
+      .logo-text {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #333;
+        line-height: 1;
+        white-space: nowrap;
+      }
+    }
   }
 
   .hamburger {
@@ -89,6 +79,9 @@
   }
 
   @media (max-width: 768px) {
+    padding: 1rem;
+    /* reduce horizontal padding on mobile */
+
     .hamburger {
       display: flex;
     }
@@ -101,17 +94,31 @@
       background-color: #ffffff;
       width: 100%;
       display: none;
-      padding: 1rem 2rem;
+      padding: 1rem 1rem;
 
       &.open {
         display: flex;
-        // align-items: center;
-        padding:  0.25rem;
+        padding: 0.25rem 1rem 0.25rem 2.5rem;
+        margin-left: 0;
+        box-sizing: border-box;
+        overflow: visible;
       }
 
       a {
         padding: 0.75rem 0;
         border-bottom: 1px solid #eaeaea;
+      }
+    }
+
+    .logo {
+      a {
+        gap: 5px;
+
+        /* smaller gap on mobile */
+        .logo-text {
+          font-size: 1.2rem;
+          /* smaller text on mobile */
+        }
       }
     }
   }
