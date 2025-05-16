@@ -35,12 +35,13 @@ This project is built with Angular 17, TypeScript, Angular Material, EmailJS, Za
 
 All blogs are managed using JSON + HTML content and rendered safely on the UI.
 
+```
 ├── src
-│ └── assets
-│ └── blogs
-│ ├── blogs.json # Blog metadata (slug, title, category)
-│ └── htmlContent.json # Blog content in sanitized HTML format
-
+│   └── assets
+│       └── blogs
+│           ├── blogs.json         # Blog metadata (slug, title, category, etc.)
+│           └── htmlContent.json   # Blog content in sanitized HTML format
+```
 
 ---
 
