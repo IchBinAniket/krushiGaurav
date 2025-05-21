@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
@@ -14,7 +14,7 @@ export class BlogdetailComponent {
   blog: any;
   safeHtmlContent: SafeHtml | undefined;
 
-  constructor(private route: ActivatedRoute, private http: HttpClient, private sanitizer: DomSanitizer) {}
+  constructor(private router: Router, private route: ActivatedRoute, private http: HttpClient, private sanitizer: DomSanitizer) {}
 
   ngOnInit() {
     const slug = this.route.snapshot.paramMap.get('slug');
@@ -22,5 +22,9 @@ export class BlogdetailComponent {
       this.blog = data;
       this.safeHtmlContent = this.sanitizer.bypassSecurityTrustHtml(this.blog.htmlContent);
     });
+  }
+
+  goTo(route: string) {
+    this.router.navigate([`/${route}`]);
   }
 }
