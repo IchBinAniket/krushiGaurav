@@ -1,24 +1,5 @@
 [
     {
-      "slug": "partner-speak-rotary-club",
-      "title": "Partner Speak: Rotary Club of Poona on Their Impactful Partnership with WOTR",
-      "date": "2025-04-15",
-      "category": "Partnerships",
-      "author": "WOTR Team",
-      "preview": "Insights into the collaborative efforts between WOTR and the Rotary Club of Poona...",
-      "thumbnail": "assets/images/blogs/partner-speak-thumbnail.jpg"
-    },
-    {
-      "slug": "climate-resilience-initiative",
-      "title": "Building Climate Resilience in Rural Communities",
-      "date": "2025-03-10",
-      "category": "Climate Change",
-      "author": "Jane Doe",
-      "preview": "Exploring strategies to enhance climate resilience among rural populations...",
-      "thumbnail": "assets/images/blogs/climate-resilience-thumbnail.jpg"
-
-    },
-    {
         "slug": "education",
         "title": "Empowering Rural Education",
         "date": "2025-03-10",
@@ -54,6 +35,15 @@
         "author": "Aikya Seva Centre",
         "preview": "Bringing healthcare access, safe drinking water, and clean energy to rural households — improving lives from the roots.",
         "thumbnail": "assets/images/blogs/mobileClinic.jpg"
-      }
+      },
+      {
+      "slug": "climate-resilience-initiative",
+      "title": "Building Climate Resilience in Rural Communities",
+      "date": "2025-03-10",
+      "category": "Climate Change",
+      "author": "Jane Doe",
+      "preview": "Exploring strategies to enhance climate resilience among rural populations...",
+      "thumbnail": "assets/images/blogs/climate-resilience-thumbnail.jpg"
+
+    }
   ]
-  
